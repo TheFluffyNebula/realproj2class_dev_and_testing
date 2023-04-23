@@ -25,6 +25,9 @@ public class App
         
         Rational secondNumber = new Rational(3, 4);
         Rational thirdNumber = new Rational(5, 6);
+        System.out.println("secondNumber "+secondNumber);
+        System.out.println("thirdNumber "+thirdNumber);
+        System.out.print("secondNumber + thirdNumber = ");
         secondNumber.add(thirdNumber);
 
     }
