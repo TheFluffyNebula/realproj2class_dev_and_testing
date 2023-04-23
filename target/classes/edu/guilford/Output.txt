@@ -1,0 +1,11 @@
+Sample output:
+Hello World!
+zerothNumber (random constructor) -98/-70
+firstNumber 16/64
+nonreduced16/64
+reduced number: 1/4
+negated number -1/4
+inverted number 4/-1
+toDouble-4.0
+nonreduced38/24
+reduced number: 19/12

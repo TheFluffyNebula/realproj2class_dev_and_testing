@@ -10,11 +10,16 @@ public class Rational {
     //constructors
     public Rational() {
         Random rand = new Random();
-        int numerator = 0;
-        int denominator = 0;
-        while (numerator == 0 && denominator == 0){
-            numerator = rand.nextInt(100) + 1;
-            denominator = rand.nextInt(100) + 1;
+        int numerator = rand.nextInt(100) + 1;
+        int denominator = rand.nextInt(100) + 1;
+        if (denominator == 0){
+            while (denominator == 0){
+                denominator = rand.nextInt(100) + 1;
+                
+                if (denominator != 0) {
+                    break;
+                }
+            }
         }
         boolean numeratorNegative = rand.nextBoolean();
         boolean denominatorNegative = rand.nextBoolean();
@@ -24,7 +29,8 @@ public class Rational {
         if (denominatorNegative) {
             denominator = -denominator;
         }
-
+        this.numerator = numerator;
+        this.denominator = denominator;
     }
 
     public Rational(int numerator, int denominator) {

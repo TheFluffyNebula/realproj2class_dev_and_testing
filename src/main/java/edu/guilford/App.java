@@ -19,6 +19,7 @@ public class App
         System.out.println("negated number "+firstNumber);
         firstNumber.invert();
         System.out.println("inverted number "+firstNumber);
+        System.out.print("toDouble");
         firstNumber.toDouble();
         //firstNumber.euclideanAlgorithm(12, 8);
         
